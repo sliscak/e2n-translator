@@ -149,9 +149,9 @@ if __name__ == "__main__":
         a = color
         b = 'color'
         pair = f1(a, b)
-        writepair(a, b)
+        writepair(pair)
         pair = cf1(a, b)
-        writepair(a, b)
+        writepair(pair)
 
 
     # random countries
