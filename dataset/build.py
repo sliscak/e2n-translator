@@ -1,5 +1,6 @@
 """"
     Making a synthetic dataset.
+    Based on the examples in https://github.com/opennars/opennars/wiki/
 """
 
 def f1(a, b):
@@ -135,6 +136,23 @@ if __name__ == "__main__":
         
     # random colors
     colors = ['red', 'green', 'blue', 'yellow', 'black', 'white', 'brown']
+    
+    def cf1(a, b):
+        # A is a type of B.
+        text = f"{a} is a {b}."
+        a = a.lower()
+        b = b.lower()
+        narsese = f"<{a} --> {b}>."
+        return text,narsese
+    
+    for color in colors:
+        a = color
+        b = 'color'
+        pair = f1(a, b)
+        writepair(a, b)
+        pair = cf1(a, b)
+        writepair(a, b)
+
 
     # random countries
     countries = ['Austria', 'Brazil', 'China', 'Russia', 'Germany', 'Australia', 'Czechia', 'Estonia',
