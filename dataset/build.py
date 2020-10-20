@@ -110,8 +110,17 @@ if __name__ == "__main__":
     # overwrite file
     with open('dataset.txt', 'w') as fd:
         pass
+    # random animals
     animals = ['Owl', 'Wolf', 'Dog', 'Cat', 'Bear', 'Horse', 'Chicken',
                'Rooster', 'Cow', 'Elephant', 'Mouse', 'Bird', 'Pig']
+    def af1(a, b):
+        # A is a type of B.
+        text = f"{a} is an {b}."
+        a = a.lower()
+        b = b.lower()
+        narsese = f"<{a} --> {b}>."
+        return text,narsese
+    
     for animal in animals:
         a = animal
         b = 'animal'
@@ -121,7 +130,13 @@ if __name__ == "__main__":
         writepair(pair)
         pair = f5(a)
         writepair(pair)
+        pair = af1(a, b)
+        writepair(pair)
+        
+    # random colors
+    colors = ['red', 'green', 'blue', 'yellow', 'black', 'white', 'brown']
 
+    # random countries
     countries = ['Austria', 'Brazil', 'China', 'Russia', 'Germany', 'Australia', 'Czechia', 'Estonia',
                  'Latvia', 'Denmark', 'France', 'Greece', 'Hungary', 'Poland', 'Slovakia', 'Sweden', 'Switzerland', 'Ukraine']
     for country in countries:
