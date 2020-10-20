@@ -119,7 +119,7 @@ if __name__ == "__main__":
         writepair(pair)
         pair = f3(a, b)
         writepair(pair)
-        pair = f5(a, b)
+        pair = f5(a)
         writepair(pair)
 
     countries = ['Austria', 'Brazil', 'China', 'Russia', 'Germany', 'Australia', 'Czechia', 'Estonia',
@@ -131,5 +131,5 @@ if __name__ == "__main__":
         writepair(pair)
         pair = f3(a, b)
         writepair(pair)
-        pair = f3(a, b)
+        pair = f5(a)
         writepair(pair)
