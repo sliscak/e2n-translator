@@ -1,5 +1,5 @@
 """"
-    Making a synthetic dataset.
+    Making a small dataset.
     Based on the examples in https://github.com/opennars/opennars/wiki/
 """
 
